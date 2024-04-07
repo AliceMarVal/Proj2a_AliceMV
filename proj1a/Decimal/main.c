@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int verifica(char str[]){
     for(int i = 0; i < strlen(str);i++){
@@ -19,7 +20,7 @@ int main(void){
     FILE *file;
     char str[50];
 
-    file = fopen("../teste.txt", "r");
+    file = fopen("./teste.txt", "r");
 
     if (file == NULL) {
         printf("Arquivo não pode ser aberto\n");

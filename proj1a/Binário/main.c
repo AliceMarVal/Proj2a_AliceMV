@@ -20,7 +20,7 @@ int main(void){
     char str[50];
 
 
-    fp = fopen("../teste.txt", "r");
+    fp = fopen("./teste.txt", "r");
 
     if (fp == NULL) {
         printf("Arquivo não pode ser aberto\n");
